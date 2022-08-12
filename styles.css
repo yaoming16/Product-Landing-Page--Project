@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto 5rem;
+    padding-top: 15rem;
+    background-color: rgb(228, 207, 180);
+    /* background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a5ac92' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%2392ac93' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/*----------------------- Header - Navbar ----------------------*/
+
+header, #title-logo-div, #nav-list, #title-div, #logo-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(226, 187, 137);
+    width: 100%;
+    padding: 2rem 2rem;
+    
+}
+
+#nav-bar {
+    margin-right: 1rem;
+}
+
+#nav-list {
+    font-size: 2rem;
+    width: 35vw;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    white-space: nowrap;
+}
+
+.nav-link-li {
+    margin: 0 2rem;
+    
+}
+
+.nav-sign {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+/*----------------------- Header - Logo ----------------------*/
+
+#logo-div img {
+    width: 7rem;
+    border-radius: 50px;
+    margin-left: 5rem;
+}
+
+#logo-div {
+    margin-right: 2rem;
+}
+
+#title-logo-div {
+    width: 60vw;
+}
+
+.nav-sign {
+    margin: 0 2rem;
+
+}
+
+/*----------------------- Header - Title ----------------------*/
+
+#title-div {
+    /* flex-wrap: wrap; */
+    white-space: nowrap;
+}
+
+/*----------------------- All content div ----------------------*/
+
+#content {
+    width: 100%;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10rem;
+}
+
+/*----------------------- Features ----------------------*/
+
+
+#features {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    margin: 2rem 0;
+    
+}
+
+
+#fast-shipping, #global-shipping, #quality, #old-violin {
+    display: flex;
+    margin: 2.5rem 0;
+}
+
+.features-logo {
+    font-size: 10rem;
+    color: rgb(173, 115, 6);
+}
+
+#features p {
+    font-size: 2rem;
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+
+}
+
+.logo-div {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    max-width: 10%;
+    height: 125px;
+}
+
+.char-content {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    margin-left: 6rem;
+}
+
+/*----------------------- Form ----------------------*/
+
+#sub-title {
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#submit {
+    width: 20vw;
+    min-width: 15rem;
+    height: 3rem;
+    margin: 0 auto;
+    background-color: rgb(230, 167, 51);
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: 650;
+}
+
+#email {
+    width: 35vw;
+    height: 3.5rem;
+    margin: 2rem auto;
+    padding: 7px;
+    background-color: rgb(241, 225, 204);
+    border: 1px solid  rgb(158, 150, 139);
+}
+
+#email::placeholder {
+    color:rgb(78, 71, 71);
+   
+}
+
+
+
+/*----------------------- Video ----------------------*/
+
+#video-div {
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0;
+}
+
+/*----------------------- Prices ----------------------*/
+
+#prices-div {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2rem;
+      
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    text-align: center;
+    background-color: rgb(233, 201, 159, 0.45);
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%2392ac93' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E"); */
+    
+}
+
+.violin-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem; 
+    height: 6rem; 
+    font-weight: bold;
+    background-color: rgb(221, 185, 138,0.75);
+    padding: 1rem;
+}
+
+.desc-item {
+    margin: 1rem auto;
+    font-size: 1.5rem;
+}
+
+.price {
+    font-size: 2rem;
+    margin: 3rem auto 2rem auto;
+}
+
+.btn {
+    width: 35%;
+    height: 3.5rem;
+    padding: 2px;
+    margin: 1rem auto 2rem auto;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: rgb(230, 167, 51);
+    font-weight: 750;
+    
+}
+
+.btn:hover, #submit:hover {
+    background-color: rgb(241, 192, 101);
+}
+
+/*--------------------- Media --------------------------*/
+
+@media (max-width:950px) {
+
+    #prices-div {
+        grid-template-columns: repeat(1,minmax(300px,50%));
+        grid-row-gap: 2rem;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    #nav-list {
+        flex-wrap: wrap;
+    }
+    
+    .nav-link-li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px) {
+
+    body {
+        margin-top: 5rem;  
+    }
+
+    header {
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+    }
+
+
+    #nav-list {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 2.5rem;
+    }
+    
+    .nav-link-li {
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    #logo-div img {
+        width: 7rem;
+        border-radius: 50px;
+        margin-left: 0;
+    }
+
+}
+
